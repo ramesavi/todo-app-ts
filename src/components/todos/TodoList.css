@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+    color: #fff;
+    background: linear-gradient(
+            90deg,
+            rgba(255, 118, 20, 1) 0%,
+            rgba(255, 84, 17, 1) 100%
+    );
+}
+
+.todoList:nth-child(4n + 1) > .todoItem {
+    background: linear-gradient(
+            90deg,
+            rgba(93, 12, 255, 1) 0%,
+            rgba(155, 0, 250, 1) 100%
+    );
+}
+
+.todoList:nth-child(4n + 2) > .todoItem {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 12, 241, 1) 0%,
+            rgba(250, 0, 135, 1) 100%
+    );
+}
+
+.todoList:nth-child(4n + 3) > .todoItem {
+    background: linear-gradient(
+            90deg,
+            rgba(20, 159, 255, 1) 0%,
+            rgba(17, 122, 255, 1) 100%
+    );
+}
+
+.todo-label {
+    display: flex;
+    align-items: center;
+}
+
+.updateBox {
+
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    width: 80%;
+    background: transparent;
+}
+
+
+.editButton, .deleteButton, .updateButton, .cancelButton {
+    margin-right: 5px;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    /*background-color: aqua;*/
+    border: 2px solid black;
+    width: 40%;
+    height: 90%;
+}
+
+.icons {
+    height: 100%;
+}
+
+input.complete {
+    margin-right: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 50%;
+}
